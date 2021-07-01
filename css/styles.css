@@ -1,0 +1,114 @@
+body {
+  padding: 30px;
+}
+
+h1{
+  margin: 0 auto;
+  text-align: center;
+}
+ul{
+  list-style: none;
+}
+
+li{
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.btn{
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+  padding: calc(1.5rem - 12px) 3rem 1.5rem;
+  background: #fff;
+}
+
+.btn:before {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  border: 3px solid #000;
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+  padding: calc(1.5rem - 6px) 3rem;
+}
+
+.btn:hover:before {
+  top: 0;
+  left: 0;
+}
+
+.btn{
+  border-radius: 8px;
+  background: #4affcf;
+}
+
+.btn:before {
+  border-radius: 8px;
+}
+
+
+.circleLeft{
+  animation: fedeInFedeOutLeft 8s ease 2s infinite normal both;  
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(#4affcf 40%, #fff 70%);
+}
+.circleRight{
+  animation: fedeInFedeOutRight 10s ease 1s infinite normal both; 
+  margin-left: auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: radial-gradient(#4affcf 40%, #fff 70%);
+}
+
+@keyframes fedeInFedeOutLeft{
+  0%{
+    opacity: 0.2;
+  }
+  50%{
+    opacity: 0.9;
+  }
+  100%{
+    opacity: 0.2;
+  }
+}
+@keyframes fedeInFedeOutRight{
+  0%{
+    opacity: 0.1;
+  }
+  50%{
+    opacity: 0.9;
+  }
+  100%{
+    opacity: 0.1;
+  }
+}
